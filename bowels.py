@@ -10,10 +10,10 @@ def main(argv):
     cmdOut = output()
     
     
-    field = numpy.zeros((constants.SIZE,constants.SIZE))
+    field = numpy.zeros((constants.SIZE,)*constants.DIMENSIONS)
     
     while True:
-        
+        #TODO player wall positioning
         gameBall.move(field)
         cmdOut.update(field)
         time.sleep(1)
